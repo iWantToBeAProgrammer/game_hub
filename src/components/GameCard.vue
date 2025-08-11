@@ -6,7 +6,7 @@
       class="favorite absolute top-2 right-2 p-2 rounded-full dark:bg-gray-700 bg-gray-300/50 hover:bg-gray-300/80 dark:hover:bg-gray-600 cursor-pointer dark:text-white text-gray-900"
       @click="toggleFavorite"
     >
-      <Heart :class="isFav ? 'text-red-500' : 'text-gray-400'" :fill="isFav ? 'red' : 'gray'"/>
+      <Heart :class="isFav ? 'text-red-500' : 'text-gray-400'" :fill="isFav ? 'red' : 'gray'" />
     </div>
 
     <img
@@ -44,7 +44,7 @@ import { computed, ref } from 'vue'
 import { toast } from 'vue-sonner'
 
 const props = defineProps<{
-  game: GameDetails
+  game: Game
 }>()
 
 const favoriteStore = useFavoritesStore()

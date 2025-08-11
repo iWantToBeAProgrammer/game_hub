@@ -20,8 +20,6 @@ export interface Game {
 }
 
 export interface GameDetails extends Game {
-  description: string
-  website: string
   description_raw: string
   developers: Array<{
     id: number
