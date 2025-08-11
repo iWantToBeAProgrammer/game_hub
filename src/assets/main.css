@@ -1,35 +1,23 @@
-@import './base.css';
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *) );
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+@font-face {
+  font-family: "ethnocentric";
+  src: url("@/assets/fonts/ethnocentric/Ethnocentric.otf");
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+@theme {
+      --font-ethnocentric: "ethnocentric", sans-serif;
+},
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+h1 {
+  font-family: var(--font-ethnocentric);
+  font-size: 2rem;
+  color: #4a5568; /* gray-700 */
 }
