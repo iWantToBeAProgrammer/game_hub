@@ -8,8 +8,8 @@ const theme = useThemeStore()
 </script>
 
 <template>
-  <Toaster position="top-right" />
-  <div class="wrapper w-full relative min-h-screen">
+  <Toaster position="top-right" :close-button="true" theme="system"/>
+  <div class="wrapper w-full relative min-h-screen overflow-x-hidden">
     <nav
       class="w-full flex absolute top-0 z-50 justify-between items-center py-4 gap-8 px-4 font-ethnocentric bg-transparent border-b border-gray-200 dark:border-gray-700"
     >
@@ -26,7 +26,7 @@ const theme = useThemeStore()
           to="/favorites"
           class="bg-red-500 px-4 py-2 rounded-md flex items-center gap-2 text-gray-300 cursor-pointer hover:bg-red-600 transition-[colors, transform] duration-200 ease-in hover:-translate-y-1"
         >
-          <Heart :size="24" fill="currentColor" /> <span>Favorites</span>
+          <Heart :size="24" fill="currentColor" /> <span class="sm:inline-block hidden">Favorites</span>
         </RouterLink>
 
         <button

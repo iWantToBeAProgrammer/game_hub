@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded-lg overflow-hidden shadow hover:shadow-lg transition bg-white dark:bg-gray-800 relative"
+    class="rounded-lg overflow-hidden shadow hover:shadow-lg transition bg-white dark:bg-gray-800 relative border border-gray-200 dark:border-gray-700"
   >
     <div
       class="favorite absolute top-2 right-2 p-2 rounded-full dark:bg-gray-700 bg-gray-300/50 hover:bg-gray-300/80 dark:hover:bg-gray-600 cursor-pointer dark:text-white text-gray-900"
@@ -38,9 +38,9 @@
 
 <script setup lang="ts">
 import { useFavoritesStore } from '@/stores/favorites'
-import type { Game, GameDetails } from '@/types/game'
+import type { Game } from '@/types/game'
 import { Heart } from 'lucide-vue-next'
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import { toast } from 'vue-sonner'
 
 const props = defineProps<{

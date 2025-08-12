@@ -31,4 +31,15 @@ export interface GameDetails extends Game {
     name: string
     slug: string
   }>
+  platforms: Array<{
+    platform: {
+      name: string
+      slug: string
+    }
+    requirements: PlatformRequirement
+  }>
+}
+export interface PlatformRequirement {
+  minimum: string
+  recommended: string
 }
