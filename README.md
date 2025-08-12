@@ -1,45 +1,76 @@
-# game_store
+# 🎮 Game Store - Frontend Test Case
 
-This template should help get you started developing with Vue 3 in Vite.
+Hasil pengerjaan technical test untuk posisi **Frontend Developer** yang diberikan oleh Can Creative.
 
-## Recommended IDE Setup
+## 📌 Deskripsi
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Aplikasi web untuk menampilkan daftar game, detail game, fitur pencarian, pagination, favorit, serta dukungan **dark mode**.  
+Dibangun menggunakan **Vue 3**, **Vite**, dan **Tailwind CSS**.
 
-## Type Support for `.vue` Imports in TS
+---
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 🚀 Tech Stack
 
-## Customize configuration
+- [Vue 3](https://vuejs.org/) - Frontend framework
+- [Vite](https://vitejs.dev/) - Development & build tool
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Pinia](https://pinia.vuejs.org/) - State management
+- [Vue Router](https://router.vuejs.org/) - Routing
+- [Vitest](https://vitest.dev/) - Unit & UI testing
+- [RAWG Video Games API](https://rawg.io/apidocs) - Data source
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 📂 Fitur yang Diimplementasikan
 
-```sh
-npm install
-```
+- ✅ **Daftar Game** dengan data dari API
+- ✅ **Detail Game** lengkap
+- ✅ **Pagination** untuk navigasi antar halaman
+- ✅ **Pencarian Game** (search bar)
+- ✅ **Favorite Games** (dengan Pinia Store)
+- ✅ **Dark Mode** (localStorage + preferensi OS)
+- ✅ **UI Tests** dengan Vitest & Testing Library
+- ✅ **Unit Tests** untuk store & komponen
+- ✅ **Deploy** menggunakan [Vercel]
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
-npm run dev
-```
+## 🛠️ Cara Install & Jalankan
 
-### Type-Check, Compile and Minify for Production
+1. **Clone repository**
 
-```sh
-npm run build
-```
+   ```bash
+   git clone https://github.com/iWantToBeAProgrammer/game_hub.git
+   cd game_hub
+   ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+2. **Install dependencies**
 
-```sh
-npm run test:unit
-```
+   ```bash
+   npm install
+   ```
 
-### Lint with [ESLint](https://eslint.org/)
+3. **Jalankan aplikasi**
 
-```sh
-npm run lint
-```
+   ```bash
+   npm run dev
+   ```
+
+4. **Jalankan test**
+   ```bash
+   npm run test
+   ```
+
+---
+
+## 🔗 Live Demo
+
+- **Live Site:** [https://js-gamehub.vercel.app/]
+- **Repository:** [https://github.com/iWantToBeAProgrammer/game_hub]
+
+---
+
+## 👤 Author
+
+**Juan Steven Son**  
+📧 [juanstevenson10@gmail.com](mailto:juanstevenson10@gmail.com)
