@@ -334,8 +334,8 @@ onMounted(() => {
               :id="tab.id"
               role="tabpanel"
             >
-              <div class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg flex justify-between w-full">
-                <div class="minimum-requirement w-1/2" v-if="currentRequirements.minimum">
+              <div class="p-4 bg-gray-100 dark:bg-gray-700 rounded-lg flex justify-between w-full sm:flex-row flex-col gap-4">
+                <div class="minimum-requirement sm:w-1/2 w-full" v-if="currentRequirements.minimum">
                   <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">
                     Minimum Requirements
                   </h3>
@@ -350,7 +350,7 @@ onMounted(() => {
                 </div>
 
                 <div
-                  class="recommended-requirement w-1/2 ml-4"
+                  class="recommended-requirement sm:w-1/2 w-full"
                   v-if="currentRequirements.recommended"
                 >
                   <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">
